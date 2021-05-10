@@ -8,13 +8,11 @@ class Content extends Component {
             <Jumbotron>
               <h1 className="display-4">Hello, Reactstrap!</h1>
               <p className="lead">
-                This is a simple hero unit, a simple jumbotron-style component for
-                calling extra attention to featured content or information.
+               Testing Testing Testing Testing Testing Testing Testing Testing
               </p>
               <hr className="my-4" />
               <p>
-                It uses utility classes for typography and spacing to space content
-                out within the larger container.
+                Testing Testing Testing Testing Testing Testing Testing Testing
               </p>
               <Button color="primary">Learn more</Button>
             </Jumbotron>
