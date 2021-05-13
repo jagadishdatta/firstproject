@@ -22,6 +22,7 @@ import {
   } from "react-router-dom";
  
 import About from './About';
+import Usersdata from './Users';
  const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,19 +37,12 @@ import About from './About';
      
           <li><Link to="/About">About</Link></li>
           <li><Link to="/Feedback">Feedback</Link></li>
+          <li><Link to="/Usersdata">Usersdata</Link></li>
           </ul>
           </nav>
           </main>
            
-        <Router>
-        <Switch>
-           <Route  path="/about" exact component={About}>
-             <About />
-           </Route>
          
-         </Switch>
-
-        </Router>
  </div>
   );
 }

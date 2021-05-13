@@ -14,10 +14,8 @@ class Feedback extends Component {
       mySubmitHandler = (event) => {
       
         event.preventDefault();
-       
- 
-
-        alert("Thank you  ");
+       this.  
+   alert("Thank you  ");
       }
       myChangeHandler = (event) => {
         let nam = event.target.name;
@@ -26,13 +24,7 @@ class Feedback extends Component {
 
         this.setState({[nam]: val});
         
-        // if(nam.trim().length === 0)
-        // {
-        //   err = <strong>Required Field</strong>;
-        // }
-        // this.setState({errormessage: err});
-   //   this.setState({[nam]: val});
-     //    this.setState({username: event.target.value});
+       
       }
       render() {  
         let success="";
@@ -70,31 +62,7 @@ class Feedback extends Component {
  
 </Row>
 </Container>
-//           <Form onSubmit={this.mySubmitHandler}>
-        
-//   <Form.Row>
-//     <Col>
-//       <Form.Control placeholder="First name"   onChange={this.myChangeHandler}  />
-//     </Col>
-//     <Col>
-//       <Form.Control placeholder="Last name" />
-//     </Col>
-//   </Form.Row>
-//   <Button variant="primary" type="submit">
-//     Submit
-//   </Button>
-// </Form>
-
-        //   <h1>Hello {this.state.username}</h1>
-        //   <p>Enter your name, and submit:</p>
-        //   <input
-        //     type='text'
-        //     onChange={this.myChangeHandler}
-        //   />
-        //   <input
-        //     type='submit'
-        //   />
-        //   </form>
+ 
         );
       }
 }

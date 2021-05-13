@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Home from './components/Home';
 import Feedback from './components/Feedback';
-
+import Usersdata from './components/Users';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
   
 import './css/style.css';
@@ -22,8 +22,8 @@ function App() {
      <Route path="/" exact component={Home} /> 
       <Route path="/About"  component={About}/>
       <Route path="/Feedback"  component={Feedback}/>
-      {/* <Route path="/post/:slug" component={Post} /> */}
-
+      <Route path="/Usersdata"  component={Usersdata}/>
+    
       
     </div>
   </Router>
