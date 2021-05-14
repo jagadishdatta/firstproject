@@ -14,7 +14,7 @@ class Feedback extends Component {
       mySubmitHandler = (event) => {
       
         event.preventDefault();
-       this.  
+      
    alert("Thank you  ");
       }
       myChangeHandler = (event) => {

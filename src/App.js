@@ -10,7 +10,7 @@ import Home from './components/Home';
 import Feedback from './components/Feedback';
 import Usersdata from './components/Users';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-  
+import Newform from './components/Forms/index'; 
 import './css/style.css';
 function App() {
   return (
@@ -23,7 +23,8 @@ function App() {
       <Route path="/About"  component={About}/>
       <Route path="/Feedback"  component={Feedback}/>
       <Route path="/Usersdata"  component={Usersdata}/>
-    
+      <Route path="/Newform"  component={Newform}/>
+
       
     </div>
   </Router>

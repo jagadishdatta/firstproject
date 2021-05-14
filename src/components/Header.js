@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import {
   Collapse,
   Navbar,
@@ -21,8 +22,9 @@ import {
     Link
   } from "react-router-dom";
  
-import About from './About';
-import Usersdata from './Users';
+// import About from './About';
+// import Usersdata from './Users';
+// import Formsignup from './Formsignup';
  const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -38,6 +40,7 @@ import Usersdata from './Users';
           <li><Link to="/About">About</Link></li>
           <li><Link to="/Feedback">Feedback</Link></li>
           <li><Link to="/Usersdata">Usersdata</Link></li>
+          <li><Link to="/Newform">Forms </Link></li>
           </ul>
           </nav>
           </main>
