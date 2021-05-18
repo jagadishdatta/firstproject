@@ -41,6 +41,8 @@ import {
           <li><Link to="/Feedback">Feedback</Link></li>
           <li><Link to="/Usersdata">Usersdata</Link></li>
           <li><Link to="/Newform">Forms </Link></li>
+          <li><Link to="/fetchform">Fetch Forms </Link></li>
+
           </ul>
           </nav>
           </main>

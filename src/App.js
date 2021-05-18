@@ -11,6 +11,7 @@ import Feedback from './components/Feedback';
 import Usersdata from './components/Users';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Newform from './components/Forms/index'; 
+import fetchform from './components/fetchform';
 import './css/style.css';
 function App() {
   return (
@@ -19,11 +20,12 @@ function App() {
       <Header />
       <Footer />
 
-     <Route path="/" exact component={Home} /> 
+      <Route path="/" exact component={Home} /> 
       <Route path="/About"  component={About}/>
       <Route path="/Feedback"  component={Feedback}/>
       <Route path="/Usersdata"  component={Usersdata}/>
       <Route path="/Newform"  component={Newform}/>
+      <Route path="/fetchform" component={fetchform}  />
 
       
     </div>

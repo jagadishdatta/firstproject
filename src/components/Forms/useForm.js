@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Redirect } from "react-router-dom";
-   
 const useForm = (callback, validate) => {
+  const [isOnline, setIsOnline] = useState(0);
+
   const [values, setValues] = useState({
     username: '',
     email: '',
@@ -25,15 +25,13 @@ const useForm = (callback, validate) => {
      setErrors(validate(values));
     setIsSubmitting(true);
     console.log({isSubmitting});
+    alert("succes");
   };
 
   useEffect(
     () => {
       if (Object.keys(errors).length === 0 && isSubmitting) {
-      
-            alert("Thank you");
-         
-
+        //  callback();
       }
     },
     [errors]
@@ -43,3 +41,5 @@ const useForm = (callback, validate) => {
 };
 
 export default useForm;
+
+   
