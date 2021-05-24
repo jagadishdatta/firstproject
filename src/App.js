@@ -12,24 +12,42 @@ import Usersdata from './components/Users';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Newform from './components/Forms/index'; 
 import fetchform from './components/fetchform';
+import crudexample from './components/crudexample';
+import edituser from './components/crudexample/Edituser';
+import getuserslist from './components/contextapi';
+import {UsersProvider}  from './components/contextapi/UsersfromContext';
 import './css/style.css';
+import Testing from './components/Testing';
+import PageContextProvider from './components/PageContextProvider';
+
 function App() {
   return (
-    <Router>
+   
+   
     <div className="App">
-      <Header />
-      <Footer />
-
-      <Route path="/" exact component={Home} /> 
+    
+       <Router>
+       {/* <PageContextProvider> */}
+  <UsersProvider> 
+       <Header />
+     <Footer />
+        <Route path="/" exact component={Home} /> 
       <Route path="/About"  component={About}/>
       <Route path="/Feedback"  component={Feedback}/>
       <Route path="/Usersdata"  component={Usersdata}/>
       <Route path="/Newform"  component={Newform}/>
       <Route path="/fetchform" component={fetchform}  />
-
-      
+      <Route path="/crudexample" component={crudexample} />
+      <Route path="/Edituser/:id" component={edituser} />
+    <Route path="/contextapi" component={getuserslist} />  
+    {/* </PageContextProvider> */}
+    </UsersProvider>  
+    </Router>
+  
     </div>
-  </Router>
+ 
+ 
+ 
   );
 }
 

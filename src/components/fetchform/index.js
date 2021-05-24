@@ -14,6 +14,6 @@ class Fetchdata extends Component {
                                 </Container>
                                 );
                           }
-                                 }
+                                  }
 
 export default Fetchdata;
