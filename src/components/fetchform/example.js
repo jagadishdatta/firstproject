@@ -20,7 +20,7 @@ const Example = (props) => {
           <td>Otto</td>
           <td>@mdo</td>
         </tr>
-        
+          
       </tbody>
     </Table>
   );

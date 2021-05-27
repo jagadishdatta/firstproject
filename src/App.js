@@ -17,21 +17,15 @@ import edituser from './components/crudexample/Edituser';
 import getuserslist from './components/contextapi';
 import {UsersProvider}  from './components/contextapi/UsersfromContext';
 import './css/style.css';
-import Testing from './components/Testing';
-import PageContextProvider from './components/PageContextProvider';
 
 function App() {
   return (
-   
-   
     <div className="App">
-    
-       <Router>
-       {/* <PageContextProvider> */}
-  <UsersProvider> 
-       <Header />
-     <Footer />
-        <Route path="/" exact component={Home} /> 
+      <Router>
+       <UsersProvider> 
+      <Header />
+      <Footer />
+      <Route path="/" exact component={Home} /> 
       <Route path="/About"  component={About}/>
       <Route path="/Feedback"  component={Feedback}/>
       <Route path="/Usersdata"  component={Usersdata}/>
@@ -39,16 +33,11 @@ function App() {
       <Route path="/fetchform" component={fetchform}  />
       <Route path="/crudexample" component={crudexample} />
       <Route path="/Edituser/:id" component={edituser} />
-    <Route path="/contextapi" component={getuserslist} />  
-    {/* </PageContextProvider> */}
-    </UsersProvider>  
+      <Route path="/contextapi" component={getuserslist} />  
+      </UsersProvider>  
     </Router>
-  
-    </div>
- 
- 
- 
-  );
+   </div>
+   );
 }
 
 export default App;

@@ -5,24 +5,27 @@ const Usersdata = () => {
     return (
         <div>
          <p> Data Coming  from one point </p>
+         
          <table>
          <tr>
             <th>S.No</th>
             <th>Name </th>
-            <th>City</th>
-            </tr>
-            {
-                user.map((list) => 
+            <th>lastName</th>
+            <th>Email</th>
+        </tr>
+        {
+        user.map((list) => 
                  ( 
                     <tr>
                     <td>{list.id} </td>
-                    <td>{list.name} </td>
-                    <td>{list.city} </td>
+                    <td>{list.firstName} </td>
+                    <td>{list.lastName} </td>
+                    <td>{list.email} </td>
                      </tr>
                     
                    )
                  )
-           }
+        }
            
          </table>
         </div>
