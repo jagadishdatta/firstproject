@@ -1,13 +1,12 @@
-.usersdata{
-    background-color:white; 
-  
+.usersdata {
+  background-color: white;
 }
-.userslist{
-    margin-left:25%;
-    margin-right: 25%;
+.userslist {
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
-.userslist  ul li{
-    width: 90px;
-    padding: 30px;
+.userslist ul li {
+  width: 90px;
+  padding: 30px;
 }

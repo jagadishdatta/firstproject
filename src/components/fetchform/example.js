@@ -1,5 +1,5 @@
-import React from 'react';
-import { Table } from 'reactstrap';
+import React from "react";
+import { Table } from "reactstrap";
 
 const Example = (props) => {
   return (
@@ -20,10 +20,9 @@ const Example = (props) => {
           <td>Otto</td>
           <td>@mdo</td>
         </tr>
-          
       </tbody>
     </Table>
   );
-}
+};
 
 export default Example;
